@@ -1,13 +1,221 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<meta charset="UTF-8">
+<title>SOLVE</title>
+<link rel="stylesheet" href="css/soft.css" />
+<script type="text/javascript" src="js/soft.js"></script>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+<script>
+var simsubscreennum=0;
+var temp=0;
+
+var box = document.querySelector(".simscreen"); 
+ document.querySelector(".simscreen").addEventListener("onclick", updateDisplay, false);
+ alert(event.pageY);
+
+function updateDisplay(event) { 
+ alert(event.pageX); 
+} 
+
+function getLoc(event,ht){
+ alert(event.pageX);
+}
+
+</script>
+</head>
+
+<body style="margin:0; font-family:verdana;">
+<div id="simscreen">
+<div id="title"><h3>SOFTENING POINT TEST ON BITUMEN</h3></div>
+
+<div class="simsubscreen" id="canvas0" >
+<h4 class="incanvas">Objective:</h4>
+<p class="incanvas" style="font-size:14px;">To determine the softening point of the given sample of bitumen.</p><br/>
+<h4 class="incanvas">Apparatus used:</h4>
+<p class="incanvas" style="font-size:14px;"> Ring and Ball Apparatus, Water Bath with Stirrer, Steel Balls, Bunsen Burner. </p>
+<!-- <img style="position:absolute; left:50px; top:80px;" title = "Ring and Ball Apparatus" src="images/emptyBeaker.png" /> -->
+<!-- <img style="position:absolute; left:60px; top:165px;" title = "Ring and Ball Apparatus" src="images/cap.png" /> -->
+
+<!-- <img style="position:absolute; left:80px; top:208px;cursor:pointer;" title = "Ring and Ball Apparatus"  src="images/r0.png" /> -->
+<img style="position:absolute; left:100px; top:280px;cursor:pointer;" src="images/table2.png" />
+<img style="position:absolute; left:424px; top:286px;transform:rotate(-30deg);max-height:21%;height:100%;cursor:pointer"  title = "Stirrer" src="images/stirrer.png" />
+
+<img style="position:absolute; left:140px; top:120px;cursor:pointer;max-width:35%;width:100%" title = "Ring and Ball Apparatus" src="images/mainImage.png" />
+<img style="position:absolute; left:500px; top:100px;max-width:20%;width:100%;" src="images/man.png" />
+
+<!-- description div -->
+<br>&nbsp;<span class="tooltip" style="border-bottom:1px dotted ; color:red;text-align:justify">Description
+	<span class="tooltiptext">
+	<strong style="color:red">Softening point of Bitumen</strong>: Denotes the temperature at which the bitumen attains a particular degree of softening under the specifications of test.
+	</span>
+	</span>
+</div>
+
+<div class="simsubscreen" id="canvas1" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;1&nbsp;</span>
+	<p class="steptext">&nbsp;The bituminous material is heated to a pouring temperature and is poured into the rings on a metal plate.</p>
+	<img id="can1-1" style="position:absolute; left:250px; top:300px;width:25%;cursor:pointer" src="images/bunsenoff.png" />
+	<img id="can1-2" style="position:absolute; left:160px; top:252px;cursor:pointer;visibility:hidden" src="images/sample.png" />
+	<img id="can1-3" style="position:absolute; left:0px; top:250px;cursor:pointer;visibility:hidden" src="images/bitPour.png" />
+	<img id="can1-4" style="position:absolute; left:295px; top:80px;cursor:pointer;visibility:hidden" src="images/thermometer.png" />
+	<img id="can1-6" style="position:absolute; left:476.8px; top:180px;cursor:pointer;visibility:hidden" src="images/moveZoom.png" />
+	<img id="can1-5" style="position:absolute; left:450px; top:80px;cursor:pointer;visibility:hidden" src="images/thermZoom.png" />
+	<img id="can1-8" style="position:absolute; left:160px; top:280px;cursor:pointer;visibility:hidden" src="images/basePlate.png" />
+	<img id="can1-7" style="position:absolute; left:200px; top:280px;visibility:hidden;" src="images/mld3.png" />
+	<img id="can1-7a" style="position:absolute; left:250px; top:280px;visibility:hidden;" src="images/mld3.png" />
+	<img id="can1-12" style="position:absolute; left:180px; top:180px;cursor:pointer;visibility:hidden" src="images/tiltsample.png" />
+	<img id="can1-11" style="position:absolute; left:300px; top:180px;cursor:pointer;visibility:hidden" src="images/bitPour2s.png" />
+	<p id="v1-1" style="position:absolute; left:350px; top:250px;cursor:pointer;width:300px;border:solid 1px black;background-color: black;color:white;font-family:verdana;font-size:14px;border-radius:5px;padding:5px;visibility:hidden;"/>Metal plate is coated with a mixture of equal parts of glycerine and dextrin.</>
+	
+</div>
+
+<div class="simsubscreen" id="canvas2" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;2&nbsp;</span>
+	<p class="steptext">&nbsp;Assemble the apparatus in position.</p>
+	<img id="can2-0" style="position:absolute; left:150px; top:280px;visibility:hidden" src="images/rack2a.png" />
+	<img id="can2-1" style="position:absolute; left:300px; top:380px;" src="images/basePlate.png" />
+	<img id="can2-2" style="position:absolute; left:340px; top:380px;cursor:pointer;" src="images/mld4.png" />
+	<img id="can2-3" style="position:absolute; left:390px; top:380px;cursor:pointer;" src="images/mld4.png" />
+	<img id="can2-4" style="position:absolute; left:480px; top:381px;cursor:pointer;" src="images/tt.png" />
+	<img id="can2-5" style="position:absolute; left:520px; top:380px;cursor:pointer;" src="images/tt.png" />
+	<img id="can2-8a" style="position:absolute; left:345px; top:381px;visibility:hidden;width:2.5%" src="images/balls.png" />
+	<img id="can2-9a" style="position:absolute; left:395px; top:381px;visibility:hidden;width:2.5%" src="images/balls.png" />
+	<img id="can2-6" style="position:absolute; left:341px; top:381px;visibility:hidden;cursor:pointer;" src="images/tt.png" />
+	<img id="can2-7" style="position:absolute; left:391px; top:381px;visibility:hidden;cursor:pointer;" src="images/tt.png" />
+	<img id="can2-8" style="position:absolute; left:480px; top:390px;visibility:hidden;width:2.5%;cursor:pointer;" src="images/balls.png" />
+	<img id="can2-9" style="position:absolute; left:510px; top:390px;visibility:hidden;width:2.5%;cursor:pointer;" src="images/balls.png" />
+	<img id="can2-10" style="position:absolute; left:170px; top:360px;cursor:pointer;visibility:hidden" src="images/tt2.png" />
+	<img id="can2-11" style="position:absolute; left:215px; top:360px;cursor:pointer;visibility:hidden" src="images/tt2.png" />
+	<img id="can2-4a" style="position:absolute; left:468px; top:352px;cursor:pointer;visibility:hidden" src="images/handRing.png" />
+	<img id="can2-8b" style="position:absolute; left:460px; top:330px;cursor:pointer;visibility:hidden" src="images/handBall.png" />
+	<img id="can2-10a" style="position:absolute; left:329px; top:350px;cursor:pointer;visibility:hidden" src="images/handBallRing.png" />
+</div>
+
+<div class="simsubscreen" id="canvas3" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;3&nbsp;</span>
+<p class="steptext">&nbsp;Fill the beaker with distilled water to a height of 50mm above the upper surface of the rings.</p>
+	<img id="can3-3a" style="position:absolute; left:232px; top:203px;visibility:hidden" src="images/r3.png" />
+	<img id="can3-2a" style="position:absolute; left:300px; top:150px;visibility:hidden" src="images/waterDrop.png" />
+	<img id="can3-2" style="position:absolute; left:212px; top:370px;" src="images/fillwater.png" />
+	<img id="can3-0" style="position:absolute; left:150px; top:220px;" src="images/beaker1.png" />
+	<img id="can3-1" style="position:absolute; left:370px; top:150px;cursor:pointer" src="images/fullBottle.png" />
+	<!-- <img id="can3-3" style="position:absolute; left:400px; top:200px;visibility:hidden;cursor:pointer" src="images/ringBallSetup.png" /> -->
+	<img id="can3-3" style="position:absolute; left:400px; top:180px;visibility:hidden;cursor:pointer" src="images/handApparatus.png" />
+	<img id="can3-1a" style="position:absolute; left:285px; top:120px;visibility:hidden" src="images/tiltBottle.png" />
+</div>
+
+<div id="canvas4" class="simsubscreen" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;4&nbsp;</span>
+<p class="steptext">&nbsp;Assemble the apparatus with the rings, stirrer and ball guides in position.</p>
+	<img id="can4-6" style="position:absolute; left:131px; top:150px;visibility:hidden" src="images/stirrer.png" />
+	<img id="can4-6c" style="position:absolute; left:425px; top:264px;visibility:hidden" src="images/stirrerHand.png" />
+	<img id="can4-6b" style="position:absolute; left:450px; top:300px;visibility:hidden" title="Stirrer"  src="images/stirrer.png" />
+	<img id="can4-0" style="position:absolute; left:50px; top:80px;" title = "Ring and Ball Apparatus" src="images/emptyMachine.png" />
+	<img id="can4-1" style="position:absolute; left:450px; top:340px;cursor:pointer" src="images/waterBeaker.png" />
+	<img id="can4-5" style="position:absolute; left:400px; top:300px;cursor:pointer;visibility:hidden" title="Heater" src="images/cap2.png" />
+	<img id="can4-5b" style="position:absolute; left:400px; top:300px;cursor:pointer;visibility:hidden" src="images/cap3.png" />
+	<img id="can4-5a" style="position:absolute; left:60px; top:163px;cursor:pointer;visibility:hidden" src="images/cap2.png" />
+	<img id="can4-4a" style="position:absolute; left:80px; top:205px;visibility:hidden" src="images/r0.png" />
+	<img id="can4-7a" style="position:absolute; left:105px; top:285px;width:2.5%;cursor:pointer;visibility:hidden" src="images/balls.png" />
+	<img id="can4-7b" style="position:absolute; left:150px; top:285px;width:2.5%;cursor:pointer;visibility:hidden" src="images/balls.png" />
+	<img id="can4-8a" style="position:absolute; left:101px; top:285px;cursor:pointer;visibility:hidden" src="images/tt2.png" />
+	<img id="can4-8b" style="position:absolute; left:146px; top:285px;cursor:pointer;visibility:hidden" src="images/tt2.png" />
+	<img id="can4-6a" style="position:absolute; left:131px; top:278px;visibility:hidden" src="images/mercury.png" />
+	<img id="can4-6d" style="position:absolute; left:131px; top:295px;visibility:hidden" src="images/mer2.png" />
+	<img id="can4-4" style="position:absolute; left:65px; top:205px;visibility:hidden" src="images/r3.png" />
+	<img id="can4-3" style="position:absolute; left:67px; top:219px;visibility:hidden" src="images/water2.png" />
+	<img id="can4-2" style="position:absolute; left:53px; top:221px;visibility:hidden;" src="images/beaker2.png" />
+
+</div>
+
+
+<div id="canvas5" class="simsubscreen" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;5&nbsp;</span>
+<p class="steptext">&nbsp;Heat the water bath and stir the liquid so that the temperature rises at a uniform rate of 5 ± 0.5 °C per minute.</p>
+	<img id="can5-9a" style="position:absolute; left:89px; top:418px;visibility:hidden" src="images/on.png" />
+	<img id="can5-9b" style="position:absolute; left:324px; top:436px;visibility:hidden" src="images/read.png" />
+	<p id="v5-1" style="position:absolute; left:332px; top:422px;color:white;font-size:14px;visibility:hidden"/>05.</p>
+	<p id="v5-2" style="position:absolute; left:356px; top:422px;font-size:14px;color:white;visibility:hidden"/>00&deg;C</p>
+	<img id="can5-6" style="position:absolute; left:131px; top:150px;" src="images/stirrer.png" />
+	<img id="can5-0" style="position:absolute; left:50px; top:80px;" title = "Ring and Ball Apparatus" src="images/emptyMachine2.png" />
+	<img id="can5-5a" style="position:absolute; left:60px; top:163px;cursor:pointer;" src="images/cap.png" />
+	<img id="can5-4a" style="position:absolute; left:80px; top:205px;" src="images/r1.png" />
+	<img id="can5-7a" style="position:absolute; left:105px; top:285px;width:2.5%;cursor:pointer;" src="images/balls.png" />
+	<img id="can5-7b" style="position:absolute; left:150px; top:285px;width:2.5%;cursor:pointer;" src="images/balls.png" />
+	<img id="can5-10a" style="position:absolute; left:100px; top:305px;width:25px;height:0px;" src="images/bit.png" />
+	<img id="can5-10b" style="position:absolute; left:145px; top:305px;width:25px;height:0px;" src="images/bit.png" />
+	<img id="can5-8a" style="position:absolute; left:101px; top:285px;cursor:pointer;" src="images/tt.png" />
+	<img id="can5-8b" style="position:absolute; left:146px; top:285px;cursor:pointer;" src="images/tt.png" />
+	<img id="can5-6a" style="position:absolute; left:131px; top:278px;" src="images/mercury.png" />
+	<img id="can5-6d" style="position:absolute; left:131px; top:295px;" src="images/mer2.png" />
+	<img id="can5-3" style="position:absolute; left:67px; top:219px;" src="images/water2.png" />
+	<img id="can5-2" style="position:absolute; left:53px; top:221px;" src="images/beaker2.png" />
+	<img id="can5-0a" style="position:absolute; left:299px; top:217px;cursor:pointer" src="images/switch1.png" />
+	<img id="can5-0b" style="position:absolute; left:90px; top:440px;cursor:pointer" src="images/switch2.png" />
+	<img id="can5-11a" style="position:absolute; left:190px; top:445px;cursor:pointer;visibility:hidden" src="images/hv1.png" />
+	<img id="can5-11b" style="position:absolute; left:177px; top:445px;cursor:pointer;visibility:hidden" src="images/hv2.png" />
+	<img id="can5-12a" style="position:absolute; left:255px; top:445px;cursor:pointer;visibility:hidden" src="images/hv1.png" />
+	<img id="can5-12b" style="position:absolute; left:240px; top:445px;cursor:pointer;visibility:hidden" src="images/hv2.png" />
+	<span id="res" style="position:absolute; left:360px; top:200px;font-family:verdana;font-size:14px;border:1px solid black;padding:5px;visibility:hidden"><strong>Observation:</strong>
+	<span>
+		<ol>
+		<li id="v5-3" style="font-family:verdana;top:200px;;font-size:14px">Temperature at which the ball 1 drops = </li>
+		<li id="v5-4" style="font-family:verdana;top:220px;;font-size:14px">Temperature at which the ball 2 drops =</li>
+		</ol>
+	</span>
+	</span>
+</div>
+
+<div id="canvas6" class="simsubscreen" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;6&nbsp;</span>
+<p class="steptext">&nbsp;Observation and Results.</p>
+	<p style="position:relative;font-family:verdana;left:150px;top:40px;font-size:14px;">Temperature at which the ball 1 drops = <span id="rs1"></span> </p>
+	<p style="position:relative;font-family:verdana;left:150px;top:60px;font-size:14px">Temperature at which the ball 2 drops = <span id="rs2"></span></p>
+	<p id="rs3" style="position:relative;font-family:verdana;left:150px;top:80px;font-size:14px">Average Temperature = </p>
+	<p id="rs4" style="position:relative;font-family:verdana;left:150px;top:100px;font-size:14px;"><strong>Softening point of bitumen = </strong> <span id="rs4"></span></p>
+	<span id="hintspan" class="tableShow" style="position:absolute;left:40px;top:320px;color:red;">Need Hint<span style="font-size:24px">&#x1F914;</span>
+		<span class="tableShowResult" style="position:absolute;left:-10px;top:35px;width:200px">
+		<p id="hint" style="color:black;border:1px solid;text-align:justify;padding:5px;" border = "1px solid">
+			Choose based on the maximum temperature recorded in the region.
+		</p>
+		</span>
+	</span>
+	<h4 id="p8-1" style="position:absolute; left:-450px; top:300px;font-family:verdana;visibility:hidden">Bitumen with this softening point is suitable for region lesser than this temperature.</h4>
+</div>
+	
+</div>
+
+
+<!-- nextButton -->
+<div id="nav">
+<img id="nextButton" onclick="navNext()" src="images/Next.png" />
+</div>
+<span id="dialog-div" style="text-align:justify">
+	<p id="divp" style="font-family:verdana; font-size:14px;padding: 5px">Both ends of the pipe must be trimmed to ensure parallel faces.</p>
+	 <input type="button" style="cursor:pointer;border-radius: 5px;margin: 0 auto; padding: 0;display: inline-block;text-align: center;" value="OK" onclick = "hideDialog();">
+</span>
+ 
+ 
+  <!-- This is the questions division -->
+<span id="question-div">
+	 <p id="divq" style="font-family:verdana; font-size:14px;">Both ends of the pipe must be trimmed to ensure parallel faces.</p>
+	 <!-- <input type="button" style="cursor:pointer" value="OK" onclick = "evaluateAnswer();"> -->
+	 <p id="ans"></p>
+</span>
+
+ <span id="ttt"></span>
+<!--Blinking Arrow	-->	
+<img class ="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png"/>
+
+<div id="copyright"> &copy; 2018 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+
+</div>
+</body> 
 </html>
