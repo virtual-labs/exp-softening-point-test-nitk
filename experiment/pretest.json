@@ -1,0 +1,46 @@
+[{
+	"question": "Bitumen has a melting point of around",
+	"answers": {
+		"a": "120 degrees Fahrenheit",
+		"b": "360 degrees Fahrenheit",
+		"c": "320 degrees Fahrenheit",
+		"d": "240 degrees Fahrenheit"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "The softening point of bitumen to be used in a place where the maximum temperature is 40&deg;C is",
+	"answers": {
+		"a": "Less than 40&deg;C",
+		"b": "Greater than 40&deg;C",
+		"c": "Equal to 40&deg;C",
+		"d": "None of the above"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "The test gives an idea of the temperature at which the bituminous materials attain a certain",
+	"answers": {
+		"a": "Viscosity",
+		"b": "Temperature",
+		"c": "Melting point",
+		"d": "Boiling point"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Bitumen with higher softening point may be preferred in",
+	"answers": {
+		"a": "Colder places",
+		"b": "Humid places",
+		"c": "Warmer places",
+		"d": "None of the above"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "The name of the test conducted to check the softening point of bitumen is",
+	"answers": {
+		"a": "Water-heater apparatus",
+		"b": "Ring and heater apparatus",
+		"c": "Ring and ball apparatus",
+		"d": "None of the above"
+	},
+	"correctAnswer": "c"
+}]

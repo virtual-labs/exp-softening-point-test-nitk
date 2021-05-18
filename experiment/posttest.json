@@ -1,0 +1,46 @@
+[{
+	"question": "Softening point should be __ the hottest day temperature",
+	"answers": {
+		"a": "Higher than",
+		"b": "Lower than",
+		"c": "To know",
+		"d": "None of the above"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "A steel ball is ____mm in diameter",
+	"answers": {
+		"a": "6.53",
+		"b": "7.53",
+		"c": "8.53",
+		"d": "9.53"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "The softening point is the temperatures at which the bitumen disks soften and",
+	"answers": {
+		"a": "Sag downwards to a distance of 30mm under the weight of a steel ball",
+		"b": "Sag downwards to a distance of 25mm under the weight of a steel ball",
+		"c": "Bulk upwards to a distance of 25mm under the weight of a steel ball",
+		"d": "Bulk upwards to a distance of 30mm under the weight of a steel ball"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "The maximum temperature recorded in Rajasthan in 2018 is 50.3&deg;C, then the bitumen suitable for road construction in this region is",
+	"answers": {
+		"a": "Bitumen having softening point of 61&deg;C",
+		"b": "Bitumen having softening point of 51&deg;C",
+		"c": "Bitumen having softening point of 41&deg;C",
+		"d": "All the above"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "The following general statement may be made about the penetration value and softening point of bitumen",
+	"answers": {
+		"a": "For very high and very low penetration value the softening point is very low",
+		"b": "Absolutely no correlation can be drawn between penetration value and softening point of bitumen",
+		"c": "Higher the penetration value, higher is the softening point",
+		"d": "Higher the penetration value, lower is the softening point"
+	},
+	"correctAnswer": "d"
+}]
