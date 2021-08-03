@@ -13,11 +13,11 @@
 <p style="text-indent:50px; text-align:justify;">The softening point of materials like asphalt, bitumen have no definite melting point, but when heated it gradually changes from brittle or very thick and slow-flowing materials to more mobile liquid material. The softening point of bitumen or tar is the temperature at which the substance attains particular degree of softening under specified conditions of test. The test is conducted by using Ring and Ball apparatus. A brass ring containing test sample of bitumen is suspended in liquid like water or glycerine at a given temperature. A steel ball is placed upon the bitumen sample and the liquid medium is heated at a rate of 5 degree per minute.</p>
 
 <center>
-  <img src="images/soften.JPG" height="210" width="350">
+  <img src="images/apparatus.png" height="300" width="380">
 </center>
 
 <center>Softening Point Test Setup</center><br>
-<center>Source: (<a href="https://www.civil.iitb.ac.in/tvm/1100_LnTse/405_lnTse/plain/plain.html">https://www.civil.iitb.ac.in/tvm/1100_LnTse/405_lnTse/plain/plain.html</a>)
+<center>Source: (<a href="http://www.expertsmind.com/questions/softening-point-test-30129391.aspx">http://www.expertsmind.com/questions/softening-point-test-30129391.aspx</a>)
 </center><br>
 
 <p style="text-indent:50px; text-align:justify;">As per IS: 334-1982 it is the temperature in &deg;C at which a standard ball passes through a sample of bitumen in a mould and falls through a height of 2.5 cm. The binder material used in pavement construction should have sufficient fluidity before its applications. The softening point of the binder helps to know the temperature up to which a bituminous binder should be heated for various pavement applications. Generally, higher softening point represents lower temperature susceptibility of bitumen and is preferred in warmer regions.</p>
