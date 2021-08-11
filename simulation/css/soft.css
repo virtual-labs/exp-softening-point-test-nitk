@@ -1,0 +1,597 @@
+﻿html
+{
+    -moz-user-select     : none;
+    -khtml-user-select   : none;
+    -webkit-user-select  : none;
+    -o-user-select       : none;
+    user-select          : none;
+}
+#simscreen
+{
+	position: relative;
+	left:0px;
+	top:0px;
+	height: 600px; 
+	width:800px;
+	border:solid 1px;
+	background-color:white;
+}
+
+#title{
+	position:relative;
+	left: 0px;
+	top: 0px;
+	height:40px;
+	font-size: 24px;
+	text-align:center;
+	background-color: black;
+	font-family: verdana;
+	color: White;
+	text-transform: uppercase; 
+}
+
+#title h3
+{
+	padding-top:2px;
+	margin:0px;
+}	
+
+.simsubscreen
+{
+	position:absolute;
+	left:50px;
+	top:50px;
+	height:530px;
+	width:745px;
+}
+
+.incanvas
+{
+	margin:5px 0 0 5px;
+	padding:0;
+}
+
+#nextButton
+{
+	position:absolute;
+	left:750px;
+	top:530px;
+	cursor:pointer;
+}
+
+.circlebg
+{
+	border-radius:100%;
+	font-size:25px;
+	color:#fff;
+	text-align:center;
+	background:#000
+}
+
+.steptext
+{
+	display:inline;
+	font-size:14px;
+}
+
+#copyright{
+	position: absolute;
+	left:60px;
+	top: 580px;
+	font-size:12px
+}
+/* #can1-5{ */
+	/* position:absolute; */
+	/* background-color:lightgrey; */
+	/* width:96px; */
+	/* height:19px; */
+	/* left:286px;  */
+	/* top:370px; */
+	/* text-align:center; */
+	/* font-family:verdana; */
+	/* font-size:14px; */
+	/* visibility:hidden; */
+/* } */
+.light{
+	position:absolute;
+	background-color:lightgrey;
+	width:96px;
+	height:19px;
+	left:286px; 
+	top:370px;
+	text-align:center;
+	font-family:verdana;
+	font-size:14px;
+}
+/* input[type=text]:focus  */
+/* { */
+	/* outline:none; */
+/* } */
+
+.wrong{
+	border-color:red;
+}
+.line2{
+	width: 50px;
+	text-decoration-line: underline;	
+	text-decoration-style: double;
+	border-bottom:none;
+	border-left:none;
+	border-top:none;
+	border-right:none;
+	font-family:verdana;
+	font-size:14px;
+	/* border:none; */
+}
+#w1span{
+	text-decoration:underline;
+}
+#dialog-div{
+	position: absolute;
+	left:400px;
+	top:100px;
+	width:300px;
+	border:solid 1px black;
+	background-color: black;
+	color:white;
+	visibility:hidden;
+	text-align:justify
+}
+
+#dialog-div p{
+	position: relative;
+	text-indent:20px;
+}
+
+#dialog-div input{
+	position: relative;
+	/* left:200px; */
+	/* width:50px; */
+	padding-top:2px;
+	float : right;
+	width:15%;
+}
+#question-div{
+	position: absolute;
+	left:400px;
+	top:350px;
+	width:300px;
+	height:120px;
+	border:ridge 3px lightgrey;
+	background-color: lightgrey;
+	/* filter: alpha(opacity=55); */
+	color:black;
+	padding:10px;
+	visibility:hidden;
+}
+input[type=button]{
+	cursor:pointer
+}
+.desc{
+	font-family: verdana;
+	font-size:14px;
+	cursor:pointer;
+	color:red;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+}
+.def{
+	display:none;
+	border:solid 1px black;
+	background-color: black;
+	color:white;
+	font-family: verdana;
+	font-size:14px;
+	border-radius:10px;
+}
+.desc:hover + .def{
+display : block;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	font-family: verdana;
+	font-size:14px;
+}
+
+.tooltip .tooltiptext {
+	font-family: verdana;
+	font-size:14px;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	border-radius: 6px;
+	padding: 10px 10px 10px 10px;
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 100;
+	/* display:none; */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+    /* display: inline-block; */
+
+}
+
+.tableShow {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  font-family: verdana;
+	font-size:14px;
+}
+
+.tableShow .tableShowResult {
+	font-family: verdana;
+	font-size:14px;
+  visibility: hidden;
+  background-color: white;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100;
+  /* top:150px; */
+
+}
+
+.tableShow:hover .tableShowResult {
+  visibility: visible;
+}
+.inputStyle{
+	border:none;
+	border-bottom: 1px solid;
+	width:55px;
+	font-family:verdana;
+	font-size:14px;
+	text-align:center;
+}
+.resultStyle{
+	border:none;
+	border-bottom-style:double;
+	width:55px;
+	font-family:verdana;
+	font-size:14px;
+	text-align:center;
+	
+}
+/* Animation keyframes */
+
+@-webkit-keyframes distilMove
+{
+	0% {left:300px; top:220px;}
+	100% {left:300px; top:180px;}
+}
+
+@keyframes distilMove
+{
+	0% {left:300px; top:220px;}
+	100% {left:300px; top:180px;}
+}
+
+@-webkit-keyframes distilWaterMove
+{
+	0% {left:200px; top:418px;}
+	100% {left:200px; top:300px;}
+}
+
+@keyframes distilWaterMove
+{
+	0% {left:200px; top:418px;}
+	100% {left:200px; top:300px;}
+}
+@-webkit-keyframes distilWaterBack
+{
+	0% {left:240px; top:180px}
+	100% {left:300px; top:220px;}
+}
+
+@keyframes distilWaterBack
+{
+	0% {left:240px; top:180px}
+	100% {left:300px; top:220px}
+}
+
+
+@keyframes bitMove
+{
+	0% {left:0px; top:250px;}
+	100% {left:100px; top:270px;}
+}
+@-webkit-keyframes bitMove
+{
+	0% {left:0px; top:250px;}
+	100% {left:100px; top:270px;}
+}
+
+@keyframes thermoMove
+{
+	0% {left:295px; top:80px;}
+	100% {left:295px; top:98px;}
+}
+@-webkit-keyframes thermoMove
+{
+	0% {left:295px; top:80px;}
+	100% {left:295px; top:98px;}
+}
+
+@keyframes thermoZoomMove
+{
+	0% {left:476.8px; top:180px;}
+	100% {left:476.8px; top:141px;}
+}
+@-webkit-keyframes thermoZoomMove
+{
+	0% {left:476.8px; top:180px;}
+	100% {left:476.8px; top:141px;}
+}
+@keyframes pourBitMove
+{
+	0% {left:300px; top:180px;}
+	100% {left:200px; top:180px;}
+}
+@-webkit-keyframes pourBitMove
+{
+	0% {left:300px; top:180px;}
+	100% {left:200px; top:180px;}
+}
+@keyframes pourBitSideMove
+{
+	0% {left:180px; top:180px;}
+	100% {left:240px; top:180px;}
+}
+@-webkit-keyframes pourBitSideMove
+{
+	0% {left:180px; top:180px;}
+	100% {left:230px; top:180px;}
+}
+@-webkit-keyframes ring1Move
+{
+	
+	0% {left:468px; top:352px;}
+	15% {left:468px; top:330px;}
+	45% {left:322px; top:330px;}
+	100% {left:322px; top:355px;}
+}
+
+@keyframes ring1Move
+{
+	0% {left:468px; top:352px;}
+	15% {left:468px; top:330px;}
+	45% {left:330px; top:330px;}
+	100% {left:330px; top:355px;}
+}
+@-webkit-keyframes ring2Move
+{
+	0% {left:508px; top:352px;}
+	25% {left:508px; top:330px;}
+	75% {left:378px; top:330px;}
+	100% {left:378px; top:355px;}
+}
+
+@keyframes ring2Move
+{
+	0% {left:508px; top:352px;}
+	25% {left:508px; top:330px;}
+	75% {left:378px; top:330px;}
+	100% {left:378px; top:355px;}
+}
+@-webkit-keyframes ball1Move
+{
+	0% {left:460px; top:355px;}
+	25% {left:460px; top:330px;}
+	75% {left:328px; top:330px;}
+	100% {left:328px; top:345px;}
+}
+
+@keyframes ball1Move
+{
+	0% {left:460px; top:355px;}
+	25% {left:460px; top:330px;}
+	75% {left:328px; top:330px;}
+	100% {left:328px; top:345px;}
+}
+@-webkit-keyframes ball2Move
+{
+	0% {left:498px; top:355px;}
+	25% {left:498px; top:330px;}
+	75% {left:380px; top:330px;}
+	100% {left:380px; top:345px;}
+}
+
+@keyframes ball2Move
+{
+	0% {left:498px; top:355px;}
+	25% {left:498px; top:330px;}
+	75% {left:380px; top:330px;}
+	100% {left:380px; top:345px;}
+}
+@-webkit-keyframes ballRing1Move
+{
+	from {left:329px; top:350px;}
+	to {left:158px; top:328px;}
+}
+
+@keyframes ballRing1Move
+{
+	from {left:329px; top:350px;}
+	to {left:158px; top:328px;}
+}
+@-webkit-keyframes ballRing2Move
+{
+	from {left:378px; top:350px;}
+	to { left:201px; top:328px;}
+}
+
+@keyframes ballRing2Move
+{
+	from {left:378px; top:350px;}
+	to { left:201px; top:328px;}
+}
+@-webkit-keyframes bottleMove
+{
+	from {left:370px; top:150px;}
+	to {left:370px; top:120px;}
+}
+
+@keyframes bottleMove
+{
+	from {left:370px; top:150px;}
+	to {left:370px; top:120px;}
+}
+@-webkit-keyframes waterMove
+{
+	from {left:212px; top:370px;transform : translate(1px,5px) rotate(0deg);}
+	to {left:210px; top:248px;transform : translate(-5px,0px) rotate(0deg);}
+}
+
+@keyframes waterMove
+{
+	from {left:212px; top:370px;transform : translate(1px,2px) rotate(0deg);}
+	to {left:210px; top:248px;transform : translate(-2px,0px) rotate(0deg);}
+}
+
+@-webkit-keyframes ringBallApparatusMove
+{
+	0% {left:400px; top:200px;}
+	25% {left:400px; top:40px;}
+	75% {left:248px; top:40px;}
+	100% {left:248px; top:183px;}
+}
+
+@keyframes ringBallApparatusMove
+{
+	0% {left:400px; top:200px;}
+	25% {left:400px; top:40px;}
+	75% {left:248px; top:40px;}
+	100% {left:248px; top:183px;}
+}
+
+@-webkit-keyframes waterBeakerMove
+{
+	from {left:450px; top:340px;}
+	to {left:67px; top:205px;}
+}
+
+@keyframes waterBeakerMove
+{
+	from {left:450px; top:340px;}
+	to {left:67px; top:205px;}
+}
+
+@-webkit-keyframes capMove
+{
+	0% {left:400px; top:300px;}
+	15% {left:400px; top:10px;}
+	45% {left:60px; top:10px;}
+	100% {left:60px; top:165px;}
+}
+
+@keyframes capMove
+{
+	0% {left:400px; top:300px;}
+	15% {left:400px; top:10px;}
+	45% {left:60px; top:10px;}
+	100% {left:60px; top:165px;}
+}
+
+@-webkit-keyframes bitThermoMove
+{
+	0% {left:425px; top:264px;}
+	15% {left:425px; top:-20px;}
+	45% {left:107px; top:-20px;}
+	100% {left:107px; top:64px;}
+}
+
+@keyframes bitThermoMove
+{
+	0% {left:425px; top:264px;}
+	15% {left:425px; top:-20px;}
+	45% {left:107px; top:-20px;}
+	100% {left:107px; top:64px;}
+}
+
+/* #question-div{ */
+	/* position: absolute; */
+	/* border:solid 1px black; */
+	/* background-color: rgba(0,0,0); */
+	/* /* filter: alpha(opacity=55); */ */
+	/* color:white; */
+	/* visibility:hidden; */
+/* } */
+
+
+@-webkit-keyframes bitStretch
+{
+	from {width:25px;height:0px}
+	to {width:25px;height:35px}
+}
+
+@keyframes bitStretch
+{
+	from {width:25px;height:0px}
+	to {width:25px;height:35px}
+}
+
+@-webkit-keyframes bitStretch2
+{
+	from {top:305px;width:25px;height:35px}
+	to {top:315px;width:25px;height:35px}
+}
+
+@keyframes bitStretch2
+{
+	from {top:305px;width:25px;height:35px}
+	to {top:315px;width:25px;height:35px}
+}
+@-webkit-keyframes ballStretch
+{
+	from {top:285px;}
+	to {top:288px;}
+}
+
+@keyframes ballStretch
+{
+	from {top:285px;}
+	to {top:288px;}
+}
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(0, 255, 255, 85);
+	-moz-box-shadow: 0 20px 30px rgba(255, 255, 255, 0.2), inset 0px 10px 30px 5px rgba(0, 255, 255, 85);
+	box-shadow: 0 20px 30px rgba(255, 255, 255, 0.2), inset 0px 10px 30px 5px rgba(0, 255, 255, 85);
+	
+    height: 10px;
+	position: absolute;
+	width: 10px;
+}
+@-webkit-keyframes bubbleMove
+{
+	from {top:@posTop+"px";}
+	to {top:250px;}
+}
+
+@keyframes bubbleMove
+{
+	from {top:@posTop+"px";}
+	to {top:250px;}
+}
+@-webkit-keyframes slidePara
+{
+	from{left:-450px; top:300px;}
+	to{left:80px; top:300px;}
+}
+
+@keyframes slidePara
+{
+	from{left:-450px; top:300px;}
+	to{left:80px; top:300px;}
+}

@@ -1,0 +1,70 @@
+{
+
+   "details": [
+       {
+			"Experiment": "Softening Point Test on Bitumen",
+			"Lab": "Transportation Engineering Lab",
+			"Discipline": "Civil Engineering",
+			"Technology": "HTML, Javascript, CSS, JQuery"
+       }
+   ],
+
+   "developer": [
+       {
+      "Developer": "Dr. Pruthviraj U",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       }
+   ],
+
+   "contributer": [
+       {
+			"Contributer": "Akshaya",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       },
+
+       {
+			"Contributer": "Swathi Shetty",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       },
+
+       {
+			"Contributer": "Aishwarya Shetty",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       },
+
+       {
+			"Contributer": "Aishwarya Hegde",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       },
+
+   		 {
+			"Contributer": "H.D Sumanth (16Cv114)",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       },
+
+	   	 {
+			"Contributer": "Ujwal M (16CV146)",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       },
+
+	   	 {
+			"Contributer": "Vathan K (16CV147)",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       },
+
+	   	 {
+			"Contributer": "Sushamitha Wadde",
+      "Institute": "National Institute of Technology Karnataka, Surathkal",
+      "InstituteAcronym": "NITK"
+       }
+   ]
+
+}
